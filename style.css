@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&display=swap');
+/*General Styling*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fraunces', serif;
+}
+
+/*styling for the header section*/
+header{
+    background-image: url(./images/desktop/image-header.jpg);
+    width: 100%;
+    height: 780px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1{
+    font-size: 50px;
+    font-family: 'Fraunces', serif;
+    color: white;
+    margin-top: 1.7em;
+    margin-bottom: 1.7em;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+header li{
+    font-size: 16px;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    padding-left: 64px;
+    padding-top: 32px;
+    
+}
+.logo{
+	transform: scale(1.3);
+	margin-left: 32px;
+}
+header a{
+    color: white;
+    text-decoration: none !important;
+}
+header li:last-child{
+    padding-right: 64px;
+}
+#button1{
+    height: 50px;
+    width: 120px;
+    background-color: white;
+    color: black;
+    font-family: 'Fraunces', serif;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    text-decoration: none !important;
+    margin-top: 18px;
+	font-size:12px;
+	margin-right: 32px;
+}
+#button1:hover{
+    background-color: hsl(200, 91%, 67%);
+    color: white;
+}
+
+/*Second Section Sytling*/
+
+.col-md-6{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.image{
+    background-size: contain;
+}
+.image1{
+    display: none;
+    background-size: cover;
+}
+.writeup{
+    width: 70%;
+}
+.writeup h2{
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: hsl(212, 27%, 19%);
+	width: 80%;
+   
+}
+.writeup p{
+    width: 90%;
+    font-size: 16px;
+    margin-top: 32px;
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 2em;
+}
+.writeup a{
+    color:  hsl(212, 27%, 19%);
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+}
+.writeup a::after{
+    content: "";
+    position: absolute;
+    background-color: hsl(51, 100%, 49%) ;
+    width: 120px;
+    height: 5px;
+    top: 50%;
+    right: 0px;
+    z-index: -1;
+    border-radius: 3px;
+
+}
+#stroke::after{
+    content: "";
+    position: absolute;
+    background-color: hsl(7, 99%, 70%);
+    width: 120px;
+    height: 5px;
+    top: 50%;
+    right: 0px;
+    z-index: -1;
+    border-radius: 3px;
+}
+.caption1, .caption2{
+    text-align: center;
+    width: 100%;
+    margin-top: -30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+	margin-bottom: 32px;
+}
+
+.caption1 p{
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+    color: hsl(167, 40%, 24%);
+    font-weight: bold;
+	font-family: 'Barlow', sans-serif;
+	font-size: 12px;
+}
+.caption1 h2{
+    font-size: 30px;
+    font-family: 'Fraunces', serif ;
+    font-weight: bold;
+    color: hsl(167, 40%, 24%);
+	margin-bottom: 32px;
+
+}
+.caption2 p{
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+    color: hsl(198, 62%, 26%);
+    font-weight: bold;
+	font-family: 'Barlow', sans-serif;
+	font-size: 12px;
+	
+}
+.caption2 h2{
+    font-size: 30px;
+    font-family: 'Fraunces', serif ;
+    font-weight: bold;
+    color: hsl(198, 62%, 26%);
+	margin-bottom: 32px;;
+}
+
+/*Client Testimonial section styling*/
+.heading{
+    margin-top: 8em;
+    color: hsl(232, 10%, 55%);
+    font-size: 16px;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+.profile{
+    height: 500px;
+    margin: 0px 20px 4em;
+}
+.profilepicture img{
+    border-radius: 50%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+	transform: scale(0.5);
+}
+.bio{
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    color: hsl(232, 10%, 55%);
+
+}
+.bio h4{
+    font-size: 16px;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    margin-top: 4em;
+}
+.bio h5{
+    font-size: 12px;
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+	margin-bottom: 8em;
+	margin-top: 1em;
+}
+.col-md-3{
+    padding: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.gallery img{
+    background-size: cover;
+    height: 425px;
+}
+/*The mobile images will not be displayed untill breakpoint is reached*/
+.mobile-images{
+    display: none;
+}
+/*Footer styling*/
+footer{
+    background-color: hsl(167, 36%, 66%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo1 svg{
+    margin-top: 4em;
+	margin-bottom: 2em;
+	transform: scale(1.3);
+	opacity: 0.7;
+}
+
+.navigation ul{
+    display: flex;
+    list-style: none;
+    
+}
+.navigation a{
+    padding: 20px;
+    color: hsl(167, 40%, 24%);
+    margin-top: 64px;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    text-align: center;
+	margin-bottom: 5em;
+	opacity: 0.7;
+
+}
+.social-media{
+    margin-bottom: 2em;
+    margin-top: 32px;
+}
+.social-media a{
+    padding: 0px 10px;
+    color: hsl(167, 40%, 24%);
+
+
+}
+.navigation a:hover{
+    cursor: pointer;
+    color: white;
+}
+.social-media a:hover{
+    color: white;
+}
+.attribution{
+    font-size: 12px;
+    color: black;
+}
+/*Toggler Icon*/
+.home{
+    display: none;
+}
+.close{
+    display: none;
+    position: absolute;
+    right: 30px;
+    z-index: 10000;
+}
+
+/*Mobile version of the sunnyside-agency landing page*/
+@media only screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+    background-image: url(./images/mobile/image-header.jpg);
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+	background-position: center;
+  }
+  .image{
+    display: none
+  }
+  .image1{
+    display: block;
+  }
+  .caption1, .caption2{
+    margin-top: -60%;
+    
+  }
+  .caption1 p, .caption2 p{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .writeup{
+    width: 100%;
+    text-align: center;
+    margin: 4em 0px;
+  }
+  .writeup p{
+	width: 100%
+  }
+  .writeup h2{
+	width: 100%;
+  }
+.heading{
+    font-size: 20px;
+}
+  .gallery{
+    display: none;
+  }
+  .mobile-images{
+    display: flex;
+    padding:0px;
+    width: 100%;
+    flex-direction: row;
+    overflow: hidden;
+
+    
+  }
+  .mobile-images img{
+    background-size: cover;
+    width: 50%;
+  }
+  .home{
+    display: block;
+    position: absolute;
+    right: 30px;
+    z-index: 10000;
+  }
+.nav-menu{
+        position: absolute;
+        overflow-x: hidden;
+		left: 30px;
+        right: 30px;
+        top: 10%;
+
+        display: block;
+        z-index: 100000;
+        min-height: 50vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 450px !important;
+    }
+.nav-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25%;
+
+}
+.logo1{
+	margin-top: 32px;
+}
+
+.nav-menu ul li a{
+    color:hsl(232, 10%, 55%);
+    font-size: 20px;
+}
+.nav-menu #button1{
+    background-color: hsl(51, 100%, 49%);
+    text-align: center;
+    margin-left: 34%;
+}
+.nav-menu{
+    display: none
+}
+}
